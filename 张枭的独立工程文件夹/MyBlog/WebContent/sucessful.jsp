@@ -7,7 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h3>出错了！</h3>
-<a href="/MyBlog/index.html">返回首页</a>
+	您好，您已登录成功
+	<%session.setAttribute("username", "临时账户"); %>
+	<a href="/Test.jsp" >Test.jsp</a><br>
 </body>
 </html>
