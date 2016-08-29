@@ -15,11 +15,11 @@ import javax.servlet.http.HttpSession;
 
 
 /**
- * 检查session，确定用户是否登录
+ * 检查session，确定用户是否登
  */
 //筛选规则为全筛选
 @WebFilter( dispatcherTypes = {DispatcherType.REQUEST }
-					, urlPatterns = { "/*" })
+					, urlPatterns = { "/null/null" })
 public class UserFilter implements Filter {
 	//不过滤的URL
 	private final String noLoginPaths="error.jsp;Login_Test;index.html";

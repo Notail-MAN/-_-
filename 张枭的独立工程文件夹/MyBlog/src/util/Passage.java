@@ -1,4 +1,5 @@
 package util;
+
 /**
  * 文章的实体类
  * 包含了文章名、文章内容、文章类别的属性
@@ -12,17 +13,20 @@ public class Passage {
 	private String content;
 	private int attribute;
 	private int id;
+	private String date;
+	private int myswitch;
 	
 	public static final int PAGE_SIZE=2;//为分页功能准备
 	
 	public Passage(){
 		
 	}
-	public Passage(String passagename,String describe,String content,int attribute){
+	public Passage(String passagename,String content,int attribute,String date){
 		
 		this.passagename=passagename;
 		this.content=content;
 		this.attribute=attribute;
+		this.date=date;
 	}
 	
 	
@@ -54,6 +58,18 @@ public class Passage {
 	}
 	public void setAttribute(int attribute) {
 		this.attribute = attribute;
+	}
+	public String getDate() {
+		return date;
+	}
+	public void setDate(String date) {
+		this.date = date;
+	}
+	public int getMyswitch() {
+		return myswitch;
+	}
+	public void setMyswitch(int myswitch) {
+		this.myswitch = myswitch;
 	}
 	
 	
