@@ -14,9 +14,8 @@ public class Passage {
 	private int attribute;
 	private int id;
 	private String date;
-	private int myswitch;
 	
-	public static final int PAGE_SIZE=2;//为分页功能准备
+	public static final int PAGE_SIZE=10;//为分页功能准备
 	
 	public Passage(){
 		
@@ -28,11 +27,6 @@ public class Passage {
 		this.attribute=attribute;
 		this.date=date;
 	}
-	
-	
-	
-	
-	
 	
 	
 	public int getId() {
@@ -65,12 +59,4 @@ public class Passage {
 	public void setDate(String date) {
 		this.date = date;
 	}
-	public int getMyswitch() {
-		return myswitch;
-	}
-	public void setMyswitch(int myswitch) {
-		this.myswitch = myswitch;
-	}
-	
-	
 }

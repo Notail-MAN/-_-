@@ -4,10 +4,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Insert title here</title>
+<title>欢迎您！管理员</title>
 </head>
 <body>
-it is test.<br>
-<a href="FindServlet?page=1&attribute=1">查看所有商品信息</a>
+<a href="../FindServlet?page=1&attribute=0&token=root">管理我的博文</a>
 </body>
 </html>

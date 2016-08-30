@@ -21,7 +21,7 @@ import javax.servlet.http.HttpSession;
  */
 
 @WebFilter( dispatcherTypes = {DispatcherType.REQUEST }
-					, urlPatterns = { "/root/*" })
+					, urlPatterns = { "/root/#" })
 public class RootFilter implements Filter {
 	//²»¹ýÂËµÄURL
     public RootFilter() {
