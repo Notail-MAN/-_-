@@ -24,7 +24,7 @@
 		<td><%=p.getId() %></td>
 		<td><%=p.getPassagename() %></td>
 		<td><%=p.getDate() %></td>
-		<td><a href="Mangage?passageid=<%=p.getId()%>">删除</a></td>
+		<td><a href="Manage?passageid=<%=p.getId()%>">删除</a></td>
 		</tr>
 		<%
 			}

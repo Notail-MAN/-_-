@@ -1,4 +1,4 @@
-<%@page import="util.Passage"%>
+ <%@page import="util.Passage"%>
 <%@page import="java.util.ArrayList"%>
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
@@ -21,10 +21,10 @@
 		for(Passage p:list){
 	%>
 	<tr align="center">
-		<!-- <td><%=p.getId() %></td> -->
+		<!-- <td><%=p.getId()%></td> -->
 		<td><%=p.getPassagename() %></td>
-		<td><%=p.getContent() %></td>
 		<td><%=p.getDate() %></td>
+		<td><a href="passage_show.jsp?passageshowid=<%=p.getId()%>">查看</a></td>
 		</tr>
 		<%
 			}

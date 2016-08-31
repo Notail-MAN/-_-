@@ -8,6 +8,6 @@
 </head>
 <body>
 it is test.<br>
-<a href="FindServlet?page=1&attribute=1">查看所有商品信息</a>
+<a href="FindServlet?page=1&attribute=0">查看文章信息</a>
 </body>
 </html>

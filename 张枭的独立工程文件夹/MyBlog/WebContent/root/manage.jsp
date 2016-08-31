@@ -7,6 +7,8 @@
 <title>欢迎您！管理员</title>
 </head>
 <body>
-<a href="../FindServlet?page=1&attribute=0&token=root">管理我的博文</a>
+<a href="../FindServlet?page=1&attribute=0&token=root">管理我的博文</a><br><br><br>
+<a href="manage_writer.jsp">写文章</a>
+
 </body>
 </html>

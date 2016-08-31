@@ -97,6 +97,8 @@ public class PassageDao {
 		return count;
 	}
 
+	
+	
 	public void deletepassage(int passageid){
 		Connection conn=getConnection();
 		String sql="delete from tb_passage where id=?";
@@ -109,5 +111,41 @@ public class PassageDao {
 			e.printStackTrace();
 		}
 	}
-
+	
+	public void newpassage(Passage p){
+		Connection conn=getConnection();
+		String sql=" INSERT tb_passage VALUES(DEFAULT,'"+p.getPassagename()+"','"+p.getContent()+"','"+p.getDate()+"',"+p.getAttribute()+")";
+		System.out.println(sql);
+		try {
+			PreparedStatement ps=conn.prepareStatement(sql);
+			ps.executeUpdate();
+			
+		} catch (SQLException e) {
+			System.out.println("定位：passagedao/newpassage");
+			e.printStackTrace();
+		}
+	}
+	
+	public Passage showpassage( int passageshowid){
+		Connection  conn=getConnection();
+		Passage p=new Passage();
+		String sql="select * from tb_passage where id=?";
+		try {
+			PreparedStatement ps=conn.prepareStatement(sql);
+			ps.setInt(1, passageshowid);
+			ResultSet rs=ps.executeQuery();
+			rs.next();
+			
+			p.setAttribute(rs.getInt("attribute"));
+			p.setId(rs.getInt("id"));
+			p.setDate(rs.getString("date"));
+			p.setPassagename(rs.getString("passagename"));
+			p.setContent(rs.getString("content"));
+			
+		} catch (SQLException e) {
+			System.out.println("定位：passagedao/newpassage");
+			e.printStackTrace();
+		}
+		return p;
+	} 
 }
